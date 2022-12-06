@@ -1,38 +1,97 @@
-.App {
+
+body{
+    background: linear-gradient( to bottom right, rgba(18, 78, 120, 1) 0%, rgba(30, 30, 30,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.app{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Header Component */
+.header{
+  width: 100%;
+  height: 2vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.add {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  background-color: #124e78;
   text-align: center;
+  align-self: flex-end;
+  border-top-right-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Display Component */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.display{
+  align-self: flex-start;
+  height: 90vh;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+/* Side-bar Component */
+.side-bar{
+  color: white;
+  height: 90vh;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.list-items:hover{
+  color: #5bc0be;
+  cursor: pointer;
+}
+
+/* Top-Box Component */
+.top-box{
+  align-self: flex-start;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.box{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#373737;
+  border-radius: 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Bottom Box Component */
+.bottom-box{
+  padding: 10px;
+  color: white;
+  background-color: #373737;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+}
+.bottom-box img{
+  width: 75%;
+  border-radius: 25px;
+  height: 65%;
+  align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle{
+    color: #5bc0be;
 }
